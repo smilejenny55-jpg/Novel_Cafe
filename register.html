@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Register | Novel Cafe</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #4b2e2b, #8b5e3c);
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+.register-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #fff8f0;
+  text-align: center;
+  margin-top: 60px;
+  text-shadow: 2px 3px 6px rgba(0,0,0,0.4);
+}
+
+/* Card */
+.register-box {
+  background-color: #fffaf5;
+  width: 380px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #4b2e2b;
+}
+
+/* Inputs */
+input[type=text],
+input[type=email],
+input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 18px;
+  border-radius: 6px;
+  border: 1px solid #c7b2a1;
+}
+
+/* Button */
+.register-btn {
+  background-color: #6f4e37;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #5a3e2b;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer a {
+  color: #6f4e37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 420px) {
+  .register-box {
+    width: 90%;
+  }
+
+  .register-title {
+    font-size: 34px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="register-title">Create Your Account ☕</h1>
+
+<div class="register-box">
+  <form action="register.php" method="POST">
+
+    <label>Username</label>
+    <input type="text" name="username" placeholder="Enter your name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Create a password" required>
+
+    <button type="submit" class="register-btn">Register</button>
+  </form>
+
+  <div class="footer">
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</div>
+
+</body>
+</html>
